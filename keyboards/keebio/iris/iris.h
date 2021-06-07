@@ -1,6 +1,8 @@
 #pragma once
 
-#ifdef KEYBOARD_keebio_iris_rev1
+#ifdef KEYBOARD_keebio_iris_rev0
+    #include "rev0.h"
+#elif KEYBOARD_keebio_iris_rev1
     #include "rev1.h"
 #elif KEYBOARD_keebio_iris_rev1_led
     #include "rev1_led.h"
