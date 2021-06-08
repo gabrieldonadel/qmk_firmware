@@ -65,14 +65,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-#define BACKLIGHT_PIN B5
+#define BACKLIGHT_PIN C6
 #define BACKLIGHT_LEVELS 5
-
-/* ws2812 RGB LED */
-#define RGB_DI_PIN D6
-#define RGBLED_NUM 12    // Number of LEDs
-#define RGBLED_SPLIT { 6, 6 }
-#define RGBLIGHT_ANIMATIONS
+#define BACKLIGHT_BREATHING
 
 /*
   Setting Handedness
