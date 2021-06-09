@@ -66,8 +66,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_RESYNC_ENABLE
 
 #define BACKLIGHT_PIN C6
-#define BACKLIGHT_LEVELS 5
+#define BACKLIGHT_LEVELS 4
 #define BACKLIGHT_BREATHING
+#define BREATHING_PERIOD 5
 
 /*
   Setting Handedness
