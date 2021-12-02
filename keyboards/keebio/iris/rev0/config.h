@@ -40,10 +40,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QMK_LED B0
 #define QMK_SPEAKER C6
 
-#define ENCODERS_PAD_A { B2 }
-#define ENCODERS_PAD_B { B3 }
-#define ENCODERS_PAD_A_RIGHT { F7 }
-#define ENCODERS_PAD_B_RIGHT { F6 }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -51,11 +47,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
 
-/* number of backlight levels */
-// #define BACKLIGHT_LEVELS 3
-
 /* Set 0 if debouncing isn't needed */
-#define DEBOUNCE 5
+#define DEBOUNCE 4
 
 /* serial.c configuration for split keyboard */
 #define SOFT_SERIAL_PIN D0
@@ -65,6 +58,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
+
+/* Backlight config */
 #define BACKLIGHT_PIN C6
 #define BACKLIGHT_LEVELS 4
 #define BACKLIGHT_BREATHING
@@ -75,5 +70,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   Left:  make keebio/iris/rev0:gabrieldonadel:avrdude-split-left
   Right: make keebio/iris/rev0:gabrieldonadel:avrdude-split-right
 */
-//#define SPLIT_HAND_PIN D5
 #define EE_HANDS

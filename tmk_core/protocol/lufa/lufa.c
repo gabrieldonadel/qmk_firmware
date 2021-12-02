@@ -675,6 +675,7 @@ static void send_keyboard(report_keyboard_t *report) {
 #    ifdef MODULE_ADAFRUIT_BLE
         adafruit_ble_send_keys(report->mods, report->keys, sizeof(report->keys));
 #    elif MODULE_RN42
+        dprint("MODULE_RN42 \n");
         serial_send(0xFD);
         serial_send(0x09);
         serial_send(0x01);
